@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>飯塚山笠を調べよう｜4年社会 単元の進め方</title>
+<meta name="description" content="4年社会「地域で受けつがれてきたもの」で、飯塚山笠を子どもが自分で調べる単元の進め方。5つの段階、調べるときのくり返し、Gemini Notebookの作り方、計画シートやインタビューの紙をまとめました。">
+<link rel="canonical" href="https://a-tozak.github.io/yamakasa-shiraberu/">
+<meta property="og:type" content="website"><meta property="og:title" content="飯塚山笠を調べよう｜4年社会 単元の進め方"><meta property="og:description" content="4年社会「地域で受けつがれてきたもの」で、飯塚山笠を子どもが自分で調べる単元の進め方。5つの段階、調べるときのくり返し、Gemini Notebookの作り方、計画シートやインタビューの紙をまとめました。">
+<meta property="og:url" content="https://a-tozak.github.io/yamakasa-shiraberu/"><meta property="og:image" content="https://a-tozak.github.io/yamakasa-shiraberu/og.png"><meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0e0f11">
+<link rel="icon" href="https://a-tozak.github.io/School_Stock/favicon.ico">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"飯塚山笠を調べよう｜4年社会 単元の進め方","description":"4年社会「地域で受けつがれてきたもの」で、飯塚山笠を子どもが自分で調べる単元の進め方。5つの段階、調べるときのくり返し、Gemini Notebookの作り方、計画シートやインタビューの紙をまとめました。","inLanguage":"ja","educationalLevel":"小学校4年","learningResourceType":"単元の進め方","publisher":{"@type":"Organization","name":"School Stock","url":"https://a-tozak.github.io/School_Stock/"},"url":"https://a-tozak.github.io/yamakasa-shiraberu/"}</script>
+<style>
+:root{--ink:#15181c;--black:#0e0f11;--paper:#ffffff;--wash:#f5f5f2;--line:#e2e2de;--sub:#5f646b;--accent:#2b5fd9;--acc-wash:#eef3fd;--red:#d12a1e;--red-wash:#fff4f3;
+ --font:"BIZ UDPGothic","Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);line-height:1.75;font-size:17px}
+img{max-width:100%;display:block}
+a{color:var(--accent);overflow-wrap:anywhere}
+h1,h2,h3{word-break:auto-phrase;color:var(--black);line-height:1.4}
+ruby rt{font-size:.5em}
+.hero h1 ruby rt{font-size:.3em;letter-spacing:.1em}
+.hero h1{padding-top:.25em}
+.top{position:sticky;top:0;z-index:5;background:var(--black);color:#fff}
+.top .in{max-width:1080px;margin:0 auto;padding:10px 16px;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.top b{font-size:15px;letter-spacing:.04em}
+.top nav{display:flex;gap:14px;flex-wrap:wrap;font-size:14px}
+.top nav a{color:#d9dbe0;text-decoration:none}
+.top nav a:hover{color:#fff}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+.hero{padding:36px 0 18px}
+.hero .unit{color:var(--sub);font-size:15px;margin:0}
+.hero h1{font-size:clamp(30px,5vw,46px);margin:.1em 0 .3em;letter-spacing:.04em}
+.mondai{border:2.5px solid var(--red);border-radius:10px;padding:14px 18px;background:var(--red-wash)}
+.mondai span{display:inline-block;background:var(--red);color:#fff;font-weight:700;font-size:14px;padding:1px 10px;border-radius:4px}
+.mondai p{margin:.4em 0 0;font-size:clamp(19px,2.6vw,24px);font-weight:700;word-break:auto-phrase}
+section{padding:34px 0 8px}
+.sh{display:flex;align-items:baseline;gap:12px;border-bottom:2px solid var(--black);padding-bottom:6px;margin-bottom:18px}
+.sh h2{margin:0;font-size:clamp(22px,3vw,28px)}
+.sh p{margin:0;color:var(--sub);font-size:15px}
+/* 段階の流れ（上の一覧） */
+.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:26px}
+.flow a{display:block;text-decoration:none;color:inherit;background:var(--wash);border-radius:10px;padding:10px 10px 12px;position:relative;text-align:center}
+.flow a:not(:last-child)::after{content:"";position:absolute;right:-9px;top:50%;width:0;height:0;border-left:8px solid #b9bcc2;border-top:8px solid transparent;border-bottom:8px solid transparent;transform:translateY(-50%)}
+.flow .n{display:inline-flex;width:30px;height:30px;border-radius:50%;background:var(--black);color:#fff;align-items:center;justify-content:center;font-weight:700}
+.flow a:last-child .n{background:var(--red)}
+.flow b{display:block;font-size:17px;margin-top:4px}
+.flow small{display:block;color:var(--sub);font-size:13px;line-height:1.5;word-break:auto-phrase}
+/* 段階の中身 */
+.stage{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:24px;align-items:center;padding:22px 0;border-bottom:1px solid var(--line)}
+.stage:nth-of-type(even) .pics{order:2}
+.stage .pics{display:grid;gap:8px}
+.stage .pics.two{grid-template-columns:1fr 1fr}
+.stage .pics img{border-radius:10px;background:#fff;border:1px solid var(--line)}
+.stage .lab{display:inline-flex;gap:8px;align-items:center;font-weight:700;color:var(--sub);font-size:15px}
+.stage .lab i{font-style:normal;display:inline-flex;width:28px;height:28px;border-radius:50%;background:var(--black);color:#fff;align-items:center;justify-content:center}
+.stage.last .lab i{background:var(--red)}
+.stage h3{font-size:clamp(21px,2.8vw,26px);margin:.2em 0 .5em}
+.stage ul{margin:0;padding-left:1.2em}
+.stage li{margin-bottom:.35em}
+.use{margin-top:10px;display:flex;flex-wrap:wrap;gap:6px}
+.use span{font-size:13px;border:1px solid var(--accent);color:var(--accent);border-radius:20px;padding:1px 10px;background:var(--acc-wash)}
+/* くり返しの図 */
+.cycle{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:24px;align-items:center}
+.cycle svg{width:100%;height:auto}
+.cycle .note{background:var(--wash);border-radius:10px;padding:14px 18px}
+.yakusoku{border:2px solid var(--red);border-radius:10px;padding:12px 18px;margin-top:16px}
+.yakusoku b{color:var(--red)}
+.yakusoku ul{margin:.3em 0 0;padding-left:1.2em}
+/* リンク・ファイル */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.card{border:1px solid var(--line);border-radius:10px;padding:12px 16px;background:#fff}
+.card b{display:block;font-size:16px}
+.card small{display:block;color:var(--sub);font-size:14px;line-height:1.6;margin-top:2px}
+.card a{font-size:14px;word-break:break-all}
+.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;border-radius:8px;padding:8px 16px;margin-top:6px}
+.gem{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px;align-items:center;background:var(--acc-wash);border-radius:12px;padding:18px 20px}
+.gem h3{margin:0 0 .3em}
+.gem p{margin:0}
+.teacher{color:var(--sub);font-size:15px}
+pre{white-space:pre-wrap;font-family:inherit;font-size:15px;background:var(--wash);border-radius:8px;padding:12px 14px;margin:8px 0 0}
+.copyrow{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.copyrow b{font-size:17px}
+button.cp{font:inherit;font-size:14px;font-weight:700;border:1.5px solid var(--accent);color:var(--accent);background:#fff;border-radius:6px;padding:4px 12px;cursor:pointer;white-space:nowrap}
+ol.steps{padding-left:1.4em}
+ol.steps li{margin-bottom:.6em}
+footer{margin-top:40px;background:var(--wash);padding:22px 0;font-size:14px;color:var(--sub)}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media (max-width:820px){
+ .flow{grid-template-columns:1fr 1fr}
+ .flow a:not(:last-child)::after{display:none}
+ .stage,.cycle,.gem{grid-template-columns:1fr}
+ .stage:nth-of-type(even) .pics{order:0}
+}
+@media print{.top{position:static}}
+</style></head><body>
+<header class="top"><div class="in"><b>飯塚山笠を調べよう</b><nav><a href="./#zentai">全体</a><a href="./#kurikaeshi">調べ方</a><a href="gemini.html">Gemini Notebook</a><a href="./#kami">使う紙</a></nav></div></header>
+<main class="wrap">
+<div class="hero"><p class="unit">4年　社会「地<ruby>域<rt>いき</rt></ruby>で受けつがれてきたもの」</p><h1><ruby>飯塚山笠<rt>いいづかやまかさ</rt></ruby>を調べよう</h1>
+<div class="mondai"><span>学習問題</span><p>飯塚山笠や<ruby>博多祇園<rt>はかたぎおん</rt></ruby>山笠など、祭りや行事は何のためにつくって、なぜみんな参加するのだろう。</p></div></div>
+
+<section id="zentai"><div class="sh"><h2>学習の進め方</h2><p>5つの順番で進めます</p></div>
+<div class="flow"><a href="#mitsukeru"><span class="n">1</span><b>見つける</b><small>気になるものから学習問題をつくる</small></a><a href="#keikaku"><span class="n">2</span><b>計画する</b><small>予想を立てて調べる計画をつくる</small></a><a href="#shiraberu"><span class="n">3</span><b>調べる</b><small>読んで聞いてたしかめる</small></a><a href="#matomeru"><span class="n">4</span><b>まとめる</b><small>学習問題に自分の考えで答える</small></a><a href="#kangaeru"><span class="n">5</span><b>考える</b><small>わたしたちにできることを考える</small></a></div>
+<div class="stage" id="mitsukeru"><div class="pics"><img src="img/riko_stage_mitsukeru.webp" alt="" loading="lazy"></div>
+<div><span class="lab"><i>1</i>見つける</span><h3>気になるものから　学習問題をつくる</h3><ul><li>福岡県で受けつがれてきた祭りや行事、ものづくり、建物を出し合う</li><li>気になったことを「はてな」にして書く</li><li>みんなのはてなから、学習問題をつくる</li></ul>
+<div class="use"><span>ノート</span></div></div></div><div class="stage" id="keikaku"><div class="pics"><img src="img/riko_keikaku_soudan.webp" alt="" loading="lazy"></div>
+<div><span class="lab"><i>2</i>計画する</span><h3>予想を立てて　調べる計画をつくる</h3><ul><li>学習問題について、わけをつけて予想を立てる</li><li>何が分かれば予想が合っていると言えるかを決める</li><li><ruby>班<rt>はん</rt></ruby>で計画シートに書き、アドバイスカードで見直す</li></ul>
+<div class="use"><span>計画シート</span><span>計画シートの書き方</span><span>アドバイスカード</span></div></div></div><div class="stage" id="shiraberu"><div class="pics two"><img src="img/riko_stage_shiraberu.webp" alt="" loading="lazy"><img src="img/riko_interview_shiyakusho.webp" alt="" loading="lazy"></div>
+<div><span class="lab"><i>3</i>調べる</span><h3>読んで　聞いて　たしかめる</h3><ul><li>ホームページや本を読む。<ruby>検索<rt>けんさく</rt></ruby>のことばにまよったら、Gemini Notebookに相談する</li><li>公民館の人や家の人にインタビューする</li><li>分かったことを、事実・言い伝え・人の思いに分けてノートに書く</li><li>ほかの祭りや行事ともくらべる</li></ul>
+<div class="use"><span>インタビューのしかた</span><span>Geminiのお願い文</span><span>Gemini Notebook</span></div></div></div><div class="stage" id="matomeru"><div class="pics"><img src="img/riko_stage_matomeru.webp" alt="" loading="lazy"></div>
+<div><span class="lab"><i>4</i>まとめる</span><h3>学習問題に　自分の考えで答える</h3><ul><li>調べたことを、年表や表にまとめる</li><li>予想は合っていたかをたしかめる</li><li>「何のために」と「なぜみんな参加するのか」に、調べて分かったことをもとに答える</li></ul>
+<div class="use"><span>ノート</span><span>計画シート</span></div></div></div><div class="stage last" id="kangaeru"><div class="pics"><img src="img/riko_stage_dekirukoto.webp" alt="" loading="lazy"></div>
+<div><span class="lab"><i>5</i>考える</span><h3>わたしたちに　できることを考える</h3><ul><li>まとめたことをもとに、受けつがれてきた祭りや行事のために、できることを出し合う</li><li>いくつかをくらべて1つえらび、わけを書く</li><li>最後の1時間をかけて考える</li></ul>
+<div class="use"><span>ノート</span></div></div></div>
+</section>
+
+<section id="kurikaeshi"><div class="sh"><h2>調べるときのくり返し</h2><p>調べるたびに、この順でたしかめます</p></div>
+<div class="cycle"><svg viewBox="0 0 560 520" role="img" aria-label="調べるときのくり返し"><defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8a8f96"/></marker></defs><circle cx="280" cy="262" r="190" fill="none" stroke="#e2e2de" stroke-width="18"/><path d="M323.4,77.0 A190,190 0 0 1 418.5,131.9" fill="none" stroke="#8a8f96" stroke-width="2.5" marker-end="url(#ah)"/><path d="M461.9,207.1 A190,190 0 0 1 461.9,316.9" fill="none" stroke="#8a8f96" stroke-width="2.5" marker-end="url(#ah)"/><path d="M418.5,392.1 A190,190 0 0 1 323.4,447.0" fill="none" stroke="#8a8f96" stroke-width="2.5" marker-end="url(#ah)"/><path d="M236.6,447.0 A190,190 0 0 1 141.5,392.1" fill="none" stroke="#8a8f96" stroke-width="2.5" marker-end="url(#ah)"/><path d="M98.1,316.9 A190,190 0 0 1 98.1,207.1" fill="none" stroke="#8a8f96" stroke-width="2.5" marker-end="url(#ah)"/><path d="M141.5,131.9 A190,190 0 0 1 236.6,77.0" fill="none" stroke="#8a8f96" stroke-width="2.5" marker-end="url(#ah)"/><g><rect x="188.0" y="42.0" width="184" height="60" rx="12" fill="#fff" stroke="#0e0f11" stroke-width="2.5"/><text x="280.0" y="67.0" text-anchor="middle" font-size="18" font-weight="700" fill="#0e0f11">問いを小さくする</text><text x="280.0" y="89.0" text-anchor="middle" font-size="13" fill="#5f646b">調べれば答えが分かる問いに</text></g><g><rect x="352.5" y="137.0" width="184" height="60" rx="12" fill="#fff" stroke="#0e0f11" stroke-width="2.5"/><text x="444.5" y="162.0" text-anchor="middle" font-size="18" font-weight="700" fill="#0e0f11">予想する</text><text x="444.5" y="184.0" text-anchor="middle" font-size="13" fill="#5f646b">わけもつけて</text></g><g><rect x="352.5" y="327.0" width="184" height="60" rx="12" fill="#fff" stroke="#2b5fd9" stroke-width="2.5"/><text x="444.5" y="352.0" text-anchor="middle" font-size="18" font-weight="700" fill="#2b5fd9">たしかめ方を決める</text><text x="444.5" y="374.0" text-anchor="middle" font-size="13" fill="#5f646b">何が分かれば合っている？</text></g><g><rect x="188.0" y="422.0" width="184" height="60" rx="12" fill="#fff" stroke="#0e0f11" stroke-width="2.5"/><text x="280.0" y="447.0" text-anchor="middle" font-size="18" font-weight="700" fill="#0e0f11">調べる</text><text x="280.0" y="469.0" text-anchor="middle" font-size="13" fill="#5f646b">読む・聞く・Geminiに相談</text></g><g><rect x="23.5" y="327.0" width="184" height="60" rx="12" fill="#fff" stroke="#0e0f11" stroke-width="2.5"/><text x="115.5" y="352.0" text-anchor="middle" font-size="18" font-weight="700" fill="#0e0f11">分けて書く</text><text x="115.5" y="374.0" text-anchor="middle" font-size="13" fill="#5f646b">事実・言い伝え・人の思い</text></g><g><rect x="23.5" y="137.0" width="184" height="60" rx="12" fill="#fff" stroke="#0e0f11" stroke-width="2.5"/><text x="115.5" y="162.0" text-anchor="middle" font-size="18" font-weight="700" fill="#0e0f11">予想とくらべる</text><text x="115.5" y="184.0" text-anchor="middle" font-size="13" fill="#5f646b">合っていた？　ちがっていた？</text></g><text x="280" y="256" text-anchor="middle" font-size="20" font-weight="700" fill="#0e0f11">調べるときの</text><text x="280" y="284" text-anchor="middle" font-size="20" font-weight="700" fill="#0e0f11">くり返し</text></svg><div><div class="note">ちがっていたら、計画を直して、もう一度。ちがっていたことも大事な結果です。</div>
+<div class="yakusoku"><b>やくそく</b><ul><li>話を聞いた人の名前は書かない。</li><li>家の人が山笠に出ているかどうかは書かない。</li><li>写真は「とってもいいですか」と聞いてからとる。</li><li><ruby>資料<rt>しりょう</rt></ruby>に書いていないことは「分からなかった」と書く。</li></ul></div></div></div>
+</section>
+
+<section id="gemini"><div class="gem"><div><h3>調べるときは、Gemini Notebookに相談できます</h3>
+<p><ruby>検索<rt>けんさく</rt></ruby>のことばや、どの<ruby>資料<rt>しりょう</rt></ruby>を見ればよいか、何が分かれば予想が合っていると言えるかを、いっしょに考えてくれます。答えは、どの<ruby>資料<rt>しりょう</rt></ruby>に書いてあるかといっしょに返ってきます。</p></div>
+<a class="btn" href="gemini.html">使い方を見る</a></div></section>
+
+<section id="shirabesaki"><div class="sh"><h2>調べる先</h2><p>まず、ここから読みます</p></div>
+<div class="cards"><div class="card"><b>飯塚山笠振興会 公式サイト</b><small>飯塚山笠の入口</small><a href="http://iizukayamakasa.com/" target="_blank" rel="noopener">http://iizukayamakasa.com/</a></div><div class="card"><b>山笠の歴史（飯塚山笠振興会）</b><small>いつ、何のために始まった？　いつ止まって、いつまた始まった？</small><a href="http://iizukayamakasa.com/index.php?u=history" target="_blank" rel="noopener">http://iizukayamakasa.com/index.php?u=history</a></div><div class="card"><b>舁き山紹介（飯塚山笠振興会）</b><small>五つの流れ（地区）の山笠</small><a href="http://iizukayamakasa.com/index.php?u=kakiyama" target="_blank" rel="noopener">http://iizukayamakasa.com/index.php?u=kakiyama</a></div><div class="card"><b>スケジュール（飯塚山笠振興会）</b><small>7月の行事の日にち。子どもが出る行事もある</small><a href="http://iizukayamakasa.com/index.php?u=schedule" target="_blank" rel="noopener">http://iizukayamakasa.com/index.php?u=schedule</a></div><div class="card"><b>夏の市民祭り「飯塚山笠」、今年の追い山は日曜開催に（筑豊経済新聞・2025年）</b><small>追い山を日曜日に変えたわけ</small><a href="https://chikuho.keizai.biz/headline/64" target="_blank" rel="noopener">https://chikuho.keizai.biz/headline/64</a></div><div class="card"><b>博多祇園山笠の由来（山笠ナビ）</b><small>博多の山笠は、何のために始まったといわれている？</small><a href="https://www.hakata-yamakasa.net/knowledge/history/yamakasa-history/" target="_blank" rel="noopener">https://www.hakata-yamakasa.net/knowledge/history/yamakasa-history/</a></div><div class="card"><b>博多祇園山笠行事（文化遺産オンライン）</b><small>国の文化財としての説明</small><a href="https://online.bunka.go.jp/heritages/detail/159358" target="_blank" rel="noopener">https://online.bunka.go.jp/heritages/detail/159358</a></div><div class="card"><b>川渡り神幸祭（田川市）</b><small>山笠が川に入る、田川市の祭り</small><a href="https://www.joho.tagawa.fukuoka.jp/kiji00344/index.html" target="_blank" rel="noopener">https://www.joho.tagawa.fukuoka.jp/kiji00344/index.html</a></div><div class="card"><b>福岡県文化財データベース</b><small>県内の文化財や行事を自分でさがせる</small><a href="https://www.fukuoka-bunkazai.jp/" target="_blank" rel="noopener">https://www.fukuoka-bunkazai.jp/</a></div></div>
+<p class="teacher">2026年10月20日に、開けることを確かめました。写真は公式のページで見ます。</p></section>
+
+<section id="kami"><div class="sh"><h2>使う紙</h2><p>先生向け</p></div>
+<p class="teacher">この単元で使った紙です。印刷して使えます。例の中の学校名と人の名前は「〇〇」にしてあります。</p>
+<div class="cards"><div class="card"><b>学習の進め方（掲示用）</b><small>A4たて1まい。5つの段階と日程。「今ここ」の札つき。</small><a class="btn" href="files/gakushu-no-susumekata.pdf" download>ダウンロード</a></div><div class="card"><b>計画シート（子ども用・見本つき）</b><small>Googleスプレッドシートに読みこめます。見本9行、空のシート、書き方の3まい。</small><a class="btn" href="files/keikaku-sheet.xlsx" download>ダウンロード</a></div><div class="card"><b>計画シートの書き方（ノートに貼る）</b><small>5mm方眼、B4よこ2まい。</small><a class="btn" href="files/keikaku-sheet-no-kakikata.pdf" download>ダウンロード</a></div><div class="card"><b>計画アドバイスカード</b><small>A4よこにA5が2まい。半分に切ってノートに貼ります。</small><a class="btn" href="files/advice-card.pdf" download>ダウンロード</a></div><div class="card"><b>インタビューのしかたとノートのお手本</b><small>5mm方眼、B4よこ3まい。お願いとマナー、ノートの書き方の例。</small><a class="btn" href="files/interview-no-shikata.pdf" download>ダウンロード</a></div><div class="card"><b>Geminiのお願い文</b><small>はがきやメールを書くときに、組み立てやヒントを返してもらう文6つ。</small><a class="btn" href="files/gemini-no-onegaibun.pdf" download>ダウンロード</a></div><div class="card"><b>調べる力のルーブリックと、わたしの調べ方チェック表</b><small>先生用2まい、使い方と学習指導要領との対応1まい、子ども用1まい。</small><a class="btn" href="files/rubric.pdf" download>ダウンロード</a></div><div class="card"><b>板書計画（計画を見直す時間）</b><small>A4よこ1まい。発問と予想される反応つき。</small><a class="btn" href="files/bansho-keikaku.pdf" download>ダウンロード</a></div></div></section>
+</main><footer><div class="wrap"><span>4年社会「地域で受けつがれてきたもの」の実践（2026年10月〜11月）。子どもの名前と学校の中のことは入れていません。</span>
+<span><a href="https://a-tozak.github.io/School_Stock/">School Stock</a>　© School Stock</span></div></footer></body></html>

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gemini Notebookで調べる｜飯塚山笠を調べよう</title>
+<meta name="description" content="飯塚山笠を調べる4年生のために、Gemini Notebookを相談相手にする作り方。入れる資料、会話の設定に貼る文、子どもの聞き方の例。">
+<link rel="canonical" href="https://a-tozak.github.io/yamakasa-shiraberu/gemini.html">
+<meta property="og:type" content="website"><meta property="og:title" content="Gemini Notebookで調べる｜飯塚山笠を調べよう"><meta property="og:description" content="飯塚山笠を調べる4年生のために、Gemini Notebookを相談相手にする作り方。入れる資料、会話の設定に貼る文、子どもの聞き方の例。">
+<meta property="og:url" content="https://a-tozak.github.io/yamakasa-shiraberu/gemini.html"><meta property="og:image" content="https://a-tozak.github.io/yamakasa-shiraberu/og.png"><meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0e0f11">
+<link rel="icon" href="https://a-tozak.github.io/School_Stock/favicon.ico">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Gemini Notebookで調べる｜飯塚山笠を調べよう","description":"飯塚山笠を調べる4年生のために、Gemini Notebookを相談相手にする作り方。入れる資料、会話の設定に貼る文、子どもの聞き方の例。","inLanguage":"ja","educationalLevel":"小学校4年","learningResourceType":"単元の進め方","publisher":{"@type":"Organization","name":"School Stock","url":"https://a-tozak.github.io/School_Stock/"},"url":"https://a-tozak.github.io/yamakasa-shiraberu/gemini.html"}</script>
+<style>
+:root{--ink:#15181c;--black:#0e0f11;--paper:#ffffff;--wash:#f5f5f2;--line:#e2e2de;--sub:#5f646b;--accent:#2b5fd9;--acc-wash:#eef3fd;--red:#d12a1e;--red-wash:#fff4f3;
+ --font:"BIZ UDPGothic","Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);line-height:1.75;font-size:17px}
+img{max-width:100%;display:block}
+a{color:var(--accent);overflow-wrap:anywhere}
+h1,h2,h3{word-break:auto-phrase;color:var(--black);line-height:1.4}
+ruby rt{font-size:.5em}
+.hero h1 ruby rt{font-size:.3em;letter-spacing:.1em}
+.hero h1{padding-top:.25em}
+.top{position:sticky;top:0;z-index:5;background:var(--black);color:#fff}
+.top .in{max-width:1080px;margin:0 auto;padding:10px 16px;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.top b{font-size:15px;letter-spacing:.04em}
+.top nav{display:flex;gap:14px;flex-wrap:wrap;font-size:14px}
+.top nav a{color:#d9dbe0;text-decoration:none}
+.top nav a:hover{color:#fff}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+.hero{padding:36px 0 18px}
+.hero .unit{color:var(--sub);font-size:15px;margin:0}
+.hero h1{font-size:clamp(30px,5vw,46px);margin:.1em 0 .3em;letter-spacing:.04em}
+.mondai{border:2.5px solid var(--red);border-radius:10px;padding:14px 18px;background:var(--red-wash)}
+.mondai span{display:inline-block;background:var(--red);color:#fff;font-weight:700;font-size:14px;padding:1px 10px;border-radius:4px}
+.mondai p{margin:.4em 0 0;font-size:clamp(19px,2.6vw,24px);font-weight:700;word-break:auto-phrase}
+section{padding:34px 0 8px}
+.sh{display:flex;align-items:baseline;gap:12px;border-bottom:2px solid var(--black);padding-bottom:6px;margin-bottom:18px}
+.sh h2{margin:0;font-size:clamp(22px,3vw,28px)}
+.sh p{margin:0;color:var(--sub);font-size:15px}
+/* 段階の流れ（上の一覧） */
+.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:26px}
+.flow a{display:block;text-decoration:none;color:inherit;background:var(--wash);border-radius:10px;padding:10px 10px 12px;position:relative;text-align:center}
+.flow a:not(:last-child)::after{content:"";position:absolute;right:-9px;top:50%;width:0;height:0;border-left:8px solid #b9bcc2;border-top:8px solid transparent;border-bottom:8px solid transparent;transform:translateY(-50%)}
+.flow .n{display:inline-flex;width:30px;height:30px;border-radius:50%;background:var(--black);color:#fff;align-items:center;justify-content:center;font-weight:700}
+.flow a:last-child .n{background:var(--red)}
+.flow b{display:block;font-size:17px;margin-top:4px}
+.flow small{display:block;color:var(--sub);font-size:13px;line-height:1.5;word-break:auto-phrase}
+/* 段階の中身 */
+.stage{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:24px;align-items:center;padding:22px 0;border-bottom:1px solid var(--line)}
+.stage:nth-of-type(even) .pics{order:2}
+.stage .pics{display:grid;gap:8px}
+.stage .pics.two{grid-template-columns:1fr 1fr}
+.stage .pics img{border-radius:10px;background:#fff;border:1px solid var(--line)}
+.stage .lab{display:inline-flex;gap:8px;align-items:center;font-weight:700;color:var(--sub);font-size:15px}
+.stage .lab i{font-style:normal;display:inline-flex;width:28px;height:28px;border-radius:50%;background:var(--black);color:#fff;align-items:center;justify-content:center}
+.stage.last .lab i{background:var(--red)}
+.stage h3{font-size:clamp(21px,2.8vw,26px);margin:.2em 0 .5em}
+.stage ul{margin:0;padding-left:1.2em}
+.stage li{margin-bottom:.35em}
+.use{margin-top:10px;display:flex;flex-wrap:wrap;gap:6px}
+.use span{font-size:13px;border:1px solid var(--accent);color:var(--accent);border-radius:20px;padding:1px 10px;background:var(--acc-wash)}
+/* くり返しの図 */
+.cycle{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:24px;align-items:center}
+.cycle svg{width:100%;height:auto}
+.cycle .note{background:var(--wash);border-radius:10px;padding:14px 18px}
+.yakusoku{border:2px solid var(--red);border-radius:10px;padding:12px 18px;margin-top:16px}
+.yakusoku b{color:var(--red)}
+.yakusoku ul{margin:.3em 0 0;padding-left:1.2em}
+/* リンク・ファイル */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.card{border:1px solid var(--line);border-radius:10px;padding:12px 16px;background:#fff}
+.card b{display:block;font-size:16px}
+.card small{display:block;color:var(--sub);font-size:14px;line-height:1.6;margin-top:2px}
+.card a{font-size:14px;word-break:break-all}
+.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;border-radius:8px;padding:8px 16px;margin-top:6px}
+.gem{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px;align-items:center;background:var(--acc-wash);border-radius:12px;padding:18px 20px}
+.gem h3{margin:0 0 .3em}
+.gem p{margin:0}
+.teacher{color:var(--sub);font-size:15px}
+pre{white-space:pre-wrap;font-family:inherit;font-size:15px;background:var(--wash);border-radius:8px;padding:12px 14px;margin:8px 0 0}
+.copyrow{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.copyrow b{font-size:17px}
+button.cp{font:inherit;font-size:14px;font-weight:700;border:1.5px solid var(--accent);color:var(--accent);background:#fff;border-radius:6px;padding:4px 12px;cursor:pointer;white-space:nowrap}
+ol.steps{padding-left:1.4em}
+ol.steps li{margin-bottom:.6em}
+footer{margin-top:40px;background:var(--wash);padding:22px 0;font-size:14px;color:var(--sub)}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media (max-width:820px){
+ .flow{grid-template-columns:1fr 1fr}
+ .flow a:not(:last-child)::after{display:none}
+ .stage,.cycle,.gem{grid-template-columns:1fr}
+ .stage:nth-of-type(even) .pics{order:0}
+}
+@media print{.top{position:static}}
+</style></head><body>
+<header class="top"><div class="in"><b>飯塚山笠を調べよう</b><nav><a href="./#zentai">全体</a><a href="./#kurikaeshi">調べ方</a><a href="gemini.html">Gemini Notebook</a><a href="./#kami">使う紙</a></nav></div></header>
+<main class="wrap">
+<div class="hero"><p class="unit">4年　社会「地<ruby>域<rt>いき</rt></ruby>で受けつがれてきたもの」</p><h1>Gemini Notebookで調べる</h1>
+<p>Gemini Notebookは、入れた<ruby>資料<rt>しりょう</rt></ruby>の中から答えて、どこに書いてあるかを教えてくれます。答えを聞くためではなく、調べ方を相談するために使います。</p></div>
+
+<section><div class="sh"><h2>子どもの聞き方</h2><p>［　］の中を自分の言葉に書きかえて聞きます</p></div>
+<div class="cards"><div class="card copy"><div class="copyrow"><b>けんさくのことばを相談する</b><button class="cp" onclick="cp(this)">コピーする</button></div><pre>［調べたいこと］について調べたいです。わたしの予想は「［予想］」です。どんなことばでけんさくするといいですか。</pre></div><div class="card copy"><div class="copyrow"><b>たしかめ方を相談する</b><button class="cp" onclick="cp(this)">コピーする</button></div><pre>わたしの予想は「［予想］」です。何が分かったら、予想が合っていると言えますか。</pre></div><div class="card copy"><div class="copyrow"><b>しりょうのどこに書いてあるか聞く</b><button class="cp" onclick="cp(this)">コピーする</button></div><pre>［知りたいこと］は、どのしりょうのどこに書いてありますか。</pre></div><div class="card copy"><div class="copyrow"><b>分かったことを分けてもらう</b><button class="cp" onclick="cp(this)">コピーする</button></div><pre>調べて分かったことを書きます。事実と、言い伝えと、人の思いに分けてください。［分かったこと］</pre></div><div class="card copy"><div class="copyrow"><b>インタビューのしつもんを見てもらう</b><button class="cp" onclick="cp(this)">コピーする</button></div><pre>インタビューで聞くことを考えました。予想をたしかめられるか見てください。予想は「［予想］」、しつもんは「［しつもん］」です。</pre></div></div>
+<div class="yakusoku"><b>やくそく</b><ul>
+<li>名前、住所、学校名は書かない。</li>
+<li>答えをそのまま写さない。教えてもらった<ruby>資料<rt>しりょう</rt></ruby>を開いて、自分で読む。</li>
+<li>Googleで<ruby>検索<rt>けんさく</rt></ruby>するときも、出てきた答えだけで決めずに、リンク先のページを開いて、どこに書いてあるかをたしかめる。</li>
+</ul></div></section>
+
+<section><div class="sh"><h2>先生の準備</h2><p>15分ほどでできます</p></div>
+<ol class="steps">
+<li>学校のGoogleアカウントで <a href="https://notebooklm.google.com/" target="_blank" rel="noopener">Gemini Notebook</a> を開き、新しいノートブックを作ります。名前は「飯塚山笠を調べる相談室」にします。</li>
+<li>ソースに、下の「調べる先」のウェブサイトを1つずつ追加します。あわせて、「単元の手引き」のテキストを追加します。</li>
+<li>チャットの設定（会話のスタイルを決める画面）で、自分で指示を書く欄を選び、下の「会話の設定に貼る文」を貼ります。</li>
+<li>先に先生が、下の「子どもの聞き方」で試します。答えにどの<ruby>資料<rt>しりょう</rt></ruby>が示されるかを確かめます。</li>
+<li>子どもに共有します。子どもがGemini Notebookを使えるかは、学校や市の決まりで確かめてください。</li>
+</ol>
+<p class="teacher">画面の名前は、Googleの更新で変わることがあります。</p>
+<div class="card copy"><div class="copyrow"><b>会話の設定に貼る文</b><button class="cp" onclick="cp(this)">コピーする</button></div><pre>あなたは、小学4年生の調べ学習の相談相手です。
+子どもたちは社会科で「飯塚山笠や博多祇園山笠など、祭りや行事は何のためにつくって、なぜみんな参加するのだろう」を調べています。
+次のことを守って答えてください。
+
+1. 子どもが調べたいことを書いたら、答えを言う前に「あなたの予想は？」と聞く。
+2. 予想を聞いたら、次の4つを短く返す。
+　・調べれば答えが分かる、小さな問いの例
+　・検索に使うことばを3つ
+　・どの資料を見るとよいか
+　・何が分かれば、予想が合っていると言えるか
+3. 事実を答えるときは、ソースに書いてあることだけを使い、どの資料に書いてあるかを示す。ソースにないことは「この資料には書いていません。人に聞くか、ほかの資料で調べよう」と答える。
+4. 事実と、言い伝え（〜といわれる）と、人の思いを分けて伝える。
+5. 子どもが調べて分かったことを書いてきたら、文を書き直さずに、事実・言い伝え・人の思いに分けて見せ、足りないところを1つだけたずねる。
+6. インタビューのしつもんを見せられたら、作りかえずに、予想をたしかめられるかを見て、ヒントを1つ返す。
+7. 小学4年生が読める言葉で、短く書く。1回の答えは200字くらいまでにする。
+8. 名前、住所、学校名、電話番号が書かれていたら、消すように伝える。</pre></div>
+<p><a class="btn" href="files/tebiki.txt" download>単元の手引き（テキスト）をダウンロード</a></p>
+<h3>調べる先（ソースに入れるウェブサイト）</h3><ul><li>飯塚山笠振興会 公式サイト<br><small><a href="http://iizukayamakasa.com/" target="_blank" rel="noopener">http://iizukayamakasa.com/</a></small></li><li>山笠の歴史（飯塚山笠振興会）<br><small><a href="http://iizukayamakasa.com/index.php?u=history" target="_blank" rel="noopener">http://iizukayamakasa.com/index.php?u=history</a></small></li><li>舁き山紹介（飯塚山笠振興会）<br><small><a href="http://iizukayamakasa.com/index.php?u=kakiyama" target="_blank" rel="noopener">http://iizukayamakasa.com/index.php?u=kakiyama</a></small></li><li>スケジュール（飯塚山笠振興会）<br><small><a href="http://iizukayamakasa.com/index.php?u=schedule" target="_blank" rel="noopener">http://iizukayamakasa.com/index.php?u=schedule</a></small></li><li>夏の市民祭り「飯塚山笠」、今年の追い山は日曜開催に（筑豊経済新聞・2025年）<br><small><a href="https://chikuho.keizai.biz/headline/64" target="_blank" rel="noopener">https://chikuho.keizai.biz/headline/64</a></small></li><li>博多祇園山笠の由来（山笠ナビ）<br><small><a href="https://www.hakata-yamakasa.net/knowledge/history/yamakasa-history/" target="_blank" rel="noopener">https://www.hakata-yamakasa.net/knowledge/history/yamakasa-history/</a></small></li><li>博多祇園山笠行事（文化遺産オンライン）<br><small><a href="https://online.bunka.go.jp/heritages/detail/159358" target="_blank" rel="noopener">https://online.bunka.go.jp/heritages/detail/159358</a></small></li><li>川渡り神幸祭（田川市）<br><small><a href="https://www.joho.tagawa.fukuoka.jp/kiji00344/index.html" target="_blank" rel="noopener">https://www.joho.tagawa.fukuoka.jp/kiji00344/index.html</a></small></li><li>福岡県文化財データベース<br><small><a href="https://www.fukuoka-bunkazai.jp/" target="_blank" rel="noopener">https://www.fukuoka-bunkazai.jp/</a></small></li></ul>
+</section>
+</main><footer><div class="wrap"><span>4年社会「地域で受けつがれてきたもの」の実践（2026年10月〜11月）。子どもの名前と学校の中のことは入れていません。</span>
+<span><a href="https://a-tozak.github.io/School_Stock/">School Stock</a>　© School Stock</span></div></footer><script>
+function cp(b){const t=b.closest('.copy').querySelector('pre').innerText;
+ const done=()=>{const o=b.textContent;b.textContent='コピーしました';setTimeout(()=>b.textContent=o,1500)};
+ if(navigator.clipboard){navigator.clipboard.writeText(t).then(done).catch(()=>fb(t,done))}else fb(t,done)}
+function fb(t,done){const a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();
+ try{document.execCommand('copy');done()}catch(e){}a.remove()}
+</script></body></html>
